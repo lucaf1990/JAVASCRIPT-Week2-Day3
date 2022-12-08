@@ -3,51 +3,49 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let number1 = 15;
-let number2 = 30;
-let major = undefined;
-if (number1 > number2) major = number1;
-else if (number2 > number1) major = number2;
-console.log(number1 > number2 || number1 < number2);
-console.log(major);
-
-let number3 = 15;
-let number4 = 30;
-if (number3 > number4);
-else if (number4 > number3) console.log(number3 > number4 && number3 < number4);
+let num1 = 10;
+let num2 = 20;
+if (num1 === num2) console.log("They are both the same numbers");
+else if (num1 > num2) console.log(num1 + "Is the major one");
+else num1 < num2;
+console.log(num2 + " Is the major one");
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-let number5 = 20;
-if (number5 !== 5);
-console.log("Not Equal");
+let num3 = 10;
+if (num3 !== 5)
+  console.log("NOT EQUAL..." + "SORRY!!! The number you pick is not a 5");
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
+let num4 = 53;
+if (num4 % 5 === 0) console.log("Good.. Your number can be divide by 5");
+else if (num4 % 5 !== 0)
+  console.log("Oppsss.. Your number can not be divided by 5");
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let number6 = 50;
-if (number6 % 5 === 0);
-console.log((number6 /= 5));
-
 /* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
+  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro
+   addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const numeri = [8, 0];
-if (numeri.includes(8) || numeri.includes(0)) {
-  console.log("Il valore è 8");
-} else console.log("Il valore non è 8");
-
-if ((numeri[0 + 1] = 10));
+let num5 = 10;
+let num6 = 2;
+if (num5 === 8 || num6 === 8) {
+  console.log("Yes one of your number is an 8");
+} else if (num5 !== 8 || num6 !== 8)
+  console.log("None of your numbers is an 8");
+if (num5 + num6 === 8) {
+  console.log("Look.. If you add them toghter you get an 8");
+} else if (num5 - num6 === 8)
+  console.log("Look.. If you subract your numbers you get an 8");
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile
@@ -56,32 +54,37 @@ if ((numeri[0 + 1] = 10));
   (altrimenti la spedizione ha un costo fisso pari a 10).
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
-
+let totalShoppingCart = 49.99;
+let shipping = 10;
+if (totalShoppingCart > 50) {
+  console.log("Oh..Congratulation..FREE SHIPPING 4 YA TODAY!!");
+} else if (totalShoppingCart <= 50)
+  console.log(
+    "Your total will be € " + totalShoppingCart + " plus shipping € " + shipping
+  );
 /* SCRIVI QUI LA TUA RISPOSTA */
-let totalShoppingCart = 60;
-if (totalShoppingCart >= 50) {
-  console.log("Complienti hai ottenuto la spedizione gratutia");
-} else if (totalShoppingCart <= 50) {
-  console.log("Total price for shipping");
-}
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima
-  se le spedizioni sono gratuite oppure no e e calcolando il totale.
+  se le sedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart1 = 60;
-let blacFridayDiscount = totalShoppingCart - (totalShoppingCart / 100) * 20;
-console.log("Il tuo sconto di '..' complimenti");
-console.log(blacFridayDiscount);
-if (blacFridayDiscount > 0) {
-  console.log("Complimenti per il tuo sconto");
-} else if ((blacFridayDiscount = 0)) {
-  console.log("Spendi almeno un centesimo per avere il tuo sconto");
-}
+let totalShoppingCart2 = 35;
+totalShoppingCart2 = totalShoppingCart2 * 0.8;
+let shipping2 = 10;
+
+if (totalShoppingCart2 > 50) {
+  console.log("Oh..Congratulation..FREE SHIPPING 4 YA TODAY!!");
+} else if (totalShoppingCart2 <= 50)
+  console.log(
+    "Your total will be € " +
+      totalShoppingCart2 +
+      " plus shipping € " +
+      shipping2
+  );
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -91,6 +94,30 @@ if (blacFridayDiscount > 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let num7 = 20;
+let num8 = 150;
+let num9 = 12;
+if (num7 >= num8) {
+  if (num9 >= num7) {
+    console.log(num9, num7, num8);
+  } else {
+    if (num9 >= num8) {
+      console.log(num7, num9, num8);
+    } else {
+      console.log(num7, num8, num9);
+    }
+  }
+} else {
+  if (num9 >= num8) {
+    console.log(num9, num8, num7);
+  } else {
+    if (num9 >= num7) {
+      console.log(num8, num9, num7);
+    } else {
+      console.log(num8, num7, num9);
+    }
+  }
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -98,57 +125,56 @@ if (blacFridayDiscount > 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let js = "JavaScript che palle";
-console.log(typeof js);
-
+let gatto = "Exotic short hair";
+console.log(typeof gatto);
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let pari = 21;
-if (pari % 2 === 0) {
-  console.log("Il numero è pari");
-} else {
-  console.log("Il numero è disapri");
-}
+let num10 = 7;
+if (num10 % 2 === 0) console.log("Your number is Even");
+else num10 % 2 !== 0;
+console.log("Your numer id Odd");
 
 /* ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let val = 13;
+if (val < 5) console.log("Meno di 5");
+else if (val < 10) console.log("Meno di 10");
+else {
+  console.log("Uguale a 10 o maggiore");
+}
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-/*const me = {
+/* SCRIVI QUI LA TUA RISPOSTA */
+const me = {
   name: "John",
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-
-/* SCRIVI QUI LA TUA RISPOSTA */
+me.city = "Toronto";
+console.log(me);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName;
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-
+delete me.skills.pop();
+console.log(me);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 14
@@ -157,8 +183,13 @@ if (pari % 2 === 0) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+const array = [];
+array.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+console.log(array);
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
+array[9] = 100;
+console.log(array);
 /* SCRIVI QUI LA TUA RISPOSTA */
